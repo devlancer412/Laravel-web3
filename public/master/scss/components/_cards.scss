@@ -1,0 +1,136 @@
+/* Cards */
+
+.card {
+  border: 1px solid $card-border-color;
+  // box-shadow: 0 10px 50px 0 rgba(244, 246, 248, 0.24);
+  .card-body {
+    padding: $card-padding-y $card-padding-x;
+    + .card-body {
+      padding-top: 1rem;
+    }
+  }
+  .card-title {
+    color: $title-color;
+    font-weight: normal;
+    margin-bottom: 1.25rem;
+    text-transform: capitalize;
+    font-size: 1.125rem;
+    > i {
+      font-size: 1rem;
+      margin-right: .5rem;
+    }
+  }
+  .card-subtitle {
+    @extend .text-gray;
+    font-weight: 400;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+  
+  }
+  .card-description {
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    color: $card-description-color;
+  }
+  &.card-outline-success {
+		border: 1px solid theme-color("success");
+	}
+	&.card-outline-primary {
+		border: 1px solid theme-color("primary");
+	}
+	&.card-outline-warning {
+		border: 1px solid theme-color("warning");
+	}
+	&.card-outline-danger {
+		border: 1px solid theme-color("danger");
+	}
+	&.card-rounded {
+		@include border-radius(5px);
+	}
+
+  &.card-faded {
+    background: #b5b0b2;
+    border-color: #b5b0b2;
+  }
+  &.card-circle-progress {
+    color: $white;
+    text-align: center;
+  }
+  &.card-img-holder {
+    position: relative;
+    .card-img-absolute {
+      position: absolute;
+      top:0;
+      right: 0;
+      height: 100%;
+    }
+  }
+  &.card-weather {
+    .weather-daily {
+      .weather-day {
+        opacity: .5;
+        font-weight: 900;
+      }
+      i {
+        font-size: 20px;
+      }
+      .weather-temp {
+        margin-top: .5rem;        
+        margin-bottom: 0;
+        opacity: .5;
+        font-size: .75rem;
+      }
+    }
+  }
+  &.card-statistics {
+    background: $primary-gradient;
+    color: $white;
+    .statistics-item {
+      position: relative;
+      &:not(:last-child) {
+        @extend .flex-grow-1;
+      }
+      @media (min-width: 768px) {
+        &:before {
+          position: absolute;
+          content: "";
+          right: 25%;
+          .rtl & {
+            right: auto;
+            left: 25%;
+          }
+          top: 15px;
+          height: calc(100% - 30px);
+          background: rgba($white, 0.2);
+          width: 1px;
+        }
+        &:last-child {
+          &:before {
+            display: none;
+          }
+        }
+      }
+      @media (max-width: 767px) {
+        &:not(:last-child) {
+          padding-bottom: 1rem;
+          margin-bottom: 1rem;
+          border-bottom: 1px solid rgba($white, 0.2);
+        }
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        h2 {
+          font-size: 2rem;
+        }
+        &:before {
+          right: 10%;
+        }
+      }
+    }
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .card-inverse-#{$color} {
+    @include card-inverse-variant(rgba(theme-color($color), .2), theme-color-level($color, 1), theme-color-level($color, 3));
+  }
+}

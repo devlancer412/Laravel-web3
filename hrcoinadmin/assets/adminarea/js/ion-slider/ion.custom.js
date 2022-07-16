@@ -1,0 +1,1 @@
+$(function(){$("#range").ionRangeSlider({hide_min_max:!0,keyboard:!0,min:10,max:500,from:50,to:440,type:"double",step:1,prefix:"$",grid:!0})});

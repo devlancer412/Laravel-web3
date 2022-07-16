@@ -1,0 +1,47 @@
+.bg {
+	background:url(/master/images/signup-bg.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    height: 130vh;
+    position:relative;display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign{background-color: #031714;width: 500px;margin: auto;border-radius: 20px;border: 2px solid #125248;background-image: url(/master/images/bg-2.jpg);padding-top: 30px;background-size: cover;display: flex;justify-content: center;}
+.sign img{margin: auto;display: block;margin-bottom: 50px;color: #fff;}
+.box{width: 430px;height: 60px;margin: 0px 25px;background-image: url(/master/images/bg-2.jpg);border-radius: 10px;padding: 0px 25px; box-shadow:0 40px 30px -8px rgba(0, 0, 0, 0.5);margin-bottom: 20px;}
+.box-1{width: 100%;}
+input {
+    background-color: inherit;
+    border: none;
+    padding: 12px 0px;
+    border-bottom: solid 2px #d1cccc;
+    margin-bottom: 26px;
+    color: #fff;
+    width: 100%;
+    font-weight: 500;
+}
+::placeholder {
+    color: #fff;
+    opacity: 1;
+  }
+  
+.check input {background-color: #d5aa57 !important;border: none;width: 50px;margin-left: 50px;}
+textarea:focus, input:focus{
+    outline: none;
+}
+/* .sign a{text-align: center;background-color: #d5aa57;width: 150px;height: 50px;margin: auto;color: #000;border-radius: 5px;padding: 14px 0px;text-decoration: none;} */
+footer a{background-color: none;margin: auto;}
+label{color: #fff;margin-bottom: 0;}
+.jun {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* justify-content: center; */
+}
+@media  (max-width: 499px) {
+    .sign{width: 100%;}
+    .box{width: 100%;margin: 0;}
+    .check input {margin-left: 0;}
+    .check label{font-size: 14px;margin-bottom: 0;}
+}

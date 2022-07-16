@@ -1,0 +1,250 @@
+.hv-wrapper .hv-item {
+
+}
+.hv-wrapper
+{
+        display: flex;
+}
+.card-sk.card .card-body {
+    padding: 0px !important;
+}
+p.card-description {
+    font-size: 16px;
+    color: #249cd1 !important;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    border-bottom: solid 1px #249cd1;
+    display: inline-block;
+    margin-bottom: 30px !important;
+    margin-top: 30px;
+}
+.hv-wrapper .hv-item .hv-item-parent p a {
+    color: #000;
+}
+.sidebar {
+    background: #fff !important;
+        -webkit-box-shadow: 0 16px 10px 0 rgba(0,0,0,0.14), 0 11px 18px 0 rgba(0,0,0,0.12), 0 13px 5px -1px rgba(0,0,0,0.2);
+    box-shadow: 0 16px 10px 0 rgba(0,0,0,0.14), 0 11px 18px 0 rgba(0,0,0,0.12), 0 13px 5px -1px rgba(0,0,0,0.2);
+}
+.sidebar .nav.sub-menu .nav-item .nav-link:before {
+
+    background: #000;
+}
+.sidebar .nav.sub-menu {
+    padding: 0 0 0 2.25rem !important;
+}
+.sidebar .nav .nav-item .nav-link
+{
+    color:#000!important;
+}
+.sidebar .nav .nav-item .nav-link i.menu-icon {
+    color: #000!important;
+}
+
+/*
+#SubmitForm .form-control {
+     border-radius: 0px;
+    border: solid 1px #bb812f;
+    height: 50px;
+    line-height: 45px;
+    border-left: solid 5px #c68831;
+}
+*/
+.form-sk-new-de
+{
+    max-width: 700px;
+    margin: auto;
+}
+.pull-right {
+    float: right !important;
+}
+.box .box-body {
+    height: auto !important;
+}
+#SubmitForm .form-group {
+    margin-bottom: 10px;
+}
+#SubmitForm .form-group input {
+    height:45px;
+        border-radius: 20px;
+}
+#SubmitForm .form-group select {
+    height:45px;
+        border-radius: 20px;
+}
+#SubmitForm .form-group textarea {
+    height:100px;
+        border-radius: 20px;
+}
+#SubmitForm .input-group 
+{
+        background: transparent !important;
+        min-width:100%;
+    
+}
+.mailbox-read-info h3 {
+    border-bottom: 1px dashed #ccc !important;
+    padding: 10px 0px !important;
+}
+.mailbox-read-info h5 {
+    border-bottom: 1px dashed #ccc !important;
+    padding: 10px 0px !important;
+}
+#SubmitForm .input-group .input-group-text {
+     border: solid 1px #c68730;
+    width: 45px;
+}
+#SubmitForm .input-group .input-group-text i {
+    color: #b37c2c !important;
+}
+#SubmitForm .btn-primary {
+    background: #27a0d5 !important;
+    border-radius: 0px;
+    border: none;
+     margin-top: 15px;
+}
+#SubmitForm .btn-light {
+    background: #000000 !important;
+    border-radius: 0px;
+    border: none;
+    color: white;
+    margin-top: 15px;
+}
+.reg_form_conform .row
+{
+         background: #fcfcfc;
+    
+}
+.reg_form_conform .form-group
+{
+    margin-bottom:0px;
+    
+}
+.reg_form_conform .form-group .col-sm-9
+{
+        line-height: 45px;
+}
+.form-group label {
+    width: 100%;
+    float: left;
+}
+.registration_done .table-sk {
+    width: 700px;
+    margin: auto;
+    border: solid 2px #b87f2e !important;
+    padding: 20px;
+}
+.table-sk h4 {
+    color: #ae782b;
+    font-size: 30px;
+    font-weight: 600;
+}
+.table-sk h3 {
+    color: #ae782b;
+    font-size: 21px;
+    font-weight: 300;
+}
+.table-sk strong {
+    padding: 4px 0px;
+    font-weight: 400;
+    font-size: 0.8125rem;
+}
+.table-sk h4 b {
+    font-weight: 700;
+}
+.table-new-sk {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+.hv-container {
+    max-width: 1191px;
+    margin: auto;
+    overflow: auto;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.geneolagy-sk {
+    position: relative;
+    display: flex;
+    min-height: 100%;
+    padding: 50px 0;
+}
+.sk-profile-div .nav-item
+{
+        margin-right: 0px;
+}
+.nav-pills .nav-link
+{
+    border:none!important;
+    
+}
+.nav-pills.nav-pills-custom .nav-link i
+{
+        margin-top: 10px;
+}
+.tab-content.tab-content-custom-pill
+{
+        padding-right: 0px;
+}
+.nav-pills.nav-pills-custom .nav-link
+{
+        border-radius: 0px !important;
+}
+.btn-sk {
+    background: #ae782b !important;
+    border-radius: 0px;
+    border: none;
+       color: white;
+    margin-top: 15px;
+}
+.btn-sk-dark{
+    background: #000000 !important;
+    border-radius: 0px;
+    border: none;
+    color: white;
+    margin-top: 15px;
+}
+.date_cla input {
+    padding: 10px 20px !important;
+    border-radius: 6px !important;
+}
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle {
+    color: #fff !important;
+    border-color: #ad782a !important;
+    background-color: #a77328 !important;
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
+     border-color: #ad782a !important;
+    background-color: #a77328 !important;
+    color: #fff !important;
+}
+.btn-outline-primary {
+    color: #fb0000 !important;
+    border-color: #fb0000 !important;
+}
+label.col-sm-3.col-form-label {
+    flex: 0 0 18% !important;
+}
+.table thead th, .jsgrid .jsgrid-table thead th {
+    font-size: 0.95rem !important;
+}
+.navbar.default-layout-navbar .navbar-brand-wrapper .navbar-brand img {
+    height: 50px !important;
+}
+@media (min-width: 768px){
+    .input-group, .asColorPicker-wrap{
+            min-width: 100% !important;
+    }
+}
+
+.navbar.default-layout-navbar .navbar-brand-wrapper
+{
+
+}
+
+
+.sk-main-sponser span {
+    background: #fb0000 !important;
+}

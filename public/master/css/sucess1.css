@@ -1,0 +1,191 @@
+
+body,
+html {
+    width: 100%;
+	height: 100%;
+    background-image:url(/master/images/sucess_bg.jpg );
+    background-size:cover;
+    color:white;
+}
+
+body, p {
+	color: #53575a !important; 
+	font: 400 1rem/1.625rem "Open Sans", sans-serif;
+}
+.row
+{
+    padding-left: 90px;
+}
+h4
+{    
+  margin-top: 7px;
+  padding-left:25px;
+}
+
+.col-sm-2 ,.col-sm-8
+{
+text-align: center;
+padding:10px;
+}
+.img 
+{
+    padding-bottom: 10px;
+text-align: center;
+}
+
+img
+{
+    height: 160px;
+}
+
+h4 {
+	color:#717171;
+	font-weight: 600;
+	font-size: 1.75rem;
+	line-height: 2rem;
+	font-family: "Poppins";
+    text-align: left;
+}
+
+
+.container {
+    background-color: #ffffff;
+    border-radius: 27px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+            0 10px 10px rgba(0,0,0,0.22);
+    position: relative;
+    overflow: hidden;
+    width: 550px;
+    max-width: 100%;
+    min-height: 400px;
+    top:100px;
+}
+
+.form-container {
+    width: 100%;
+    z-index: 2;
+    height: 50%;
+    transition: all 0.6s ease-in-out;
+}
+
+.container.right-panel-active .sign-in-container {
+    transform: translateX(100%);
+}
+
+
+
+
+.container.right-panel-active .overlay {
+    transform: translateX(50%);
+}
+
+.overlay-panel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+    transform: translateX(-20%);
+    background: violet;
+}
+
+.container.right-panel-active .overlay-left {
+    transform: translateX(0);
+}
+
+.overlay-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+    transform: translateX(20%);
+}
+
+@media only screen and (max-width: 800px) {
+.container {
+    background-color: #fff;
+    border-radius: 27px;
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+    position: relative;
+    overflow:inherit;
+    width: 94%;
+    max-width: 94%;
+    min-height: 480px;
+}
+h4 
+{
+    text-align: center;
+}
+.row
+{
+    padding-left: 0px;
+}
+.overlay {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    color: #FFFFFF;
+    position: inherit;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+.overlay-panel.overlay-right {
+    display: none;
+}
+.overlay-container {
+    position: inherit;
+    top: 0;
+    left: inherit;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+.overlay-panel {
+    position: inherit;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: inherit;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+.overlay-panel.overlay-right {
+    background: url(log.jpg);
+    background-repeat: no-repeat;
+}
+
+}
+.billin h2 {
+    color: #666666;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.form-control[readonly]
+{
+     background-color:white;
+     border:  0px solid;
+     font-weight: 400;
+     font-size: 20px;
+}

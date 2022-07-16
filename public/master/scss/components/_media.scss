@@ -1,0 +1,17 @@
+.image-layers {
+	position: relative;
+	min-height: 40px;
+	.image-layer-item {
+		position: absolute;
+		border: 3px solid $white;
+	}
+	@for $i from 1 through 10 {
+    :nth-child(#{ $i }) {
+      z-index: #{ 10 - ($i - 1) };
+      left: #{ ($i - 1) * 25 }px;
+    }
+	}
+	.profile-image-text {
+		line-height: 34px;
+	}
+}

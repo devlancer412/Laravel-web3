@@ -1,0 +1,18 @@
+@media all and (max-device-width: 820px) and (min-device-height: 1180px) and (orientation:portrait) {
+
+.sz h2 {
+    font-size: 25px !important;
+}
+.benefits-icon img {
+    width: 122px;
+    position: relative;
+    top: -41px;
+}
+.timeline::after{
+	height: auto;
+}
+img.agency_111 {
+    width: 100%;
+    top: 62%;
+}
+}

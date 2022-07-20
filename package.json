@@ -7,8 +7,7 @@
         "watch-poll": "mix watch -- --watch-options-poll=1000",
         "hot": "mix watch --hot",
         "prod": "npm run production",
-        "production": "mix --production",
-        "send_token": "node public/tron/sendToken.js"
+        "production": "mix --production"
     },
     "devDependencies": {
         "axios": "^0.25",
